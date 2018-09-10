@@ -25,10 +25,8 @@
 </head>
 <body>
 	<input type="text" name="busca" id="busca">
-	<div id="autocomplete">
-		
-	</div>
-
+	<div id="autocomplete"></div>
+	
 	<script type="text/javascript" src="./jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="./script.js"></script>
 </body>

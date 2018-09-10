@@ -7,7 +7,7 @@ $(function(){
 		var busca = $(this).val();
 
 		$.ajax({
-			url:'busca.php',
+			url:'search.php',
 			type:'POST',
 			data:{texto:busca},
 			success:function(html){

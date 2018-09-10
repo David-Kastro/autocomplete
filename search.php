@@ -1,13 +1,17 @@
 <?php
+
+$dbname   = 'teste1';
+$host     = 'localhost';
+$user     = 'root';
+$pass     = '';
+
 try{
-	$db = new PDO("mysql:dbname=teste1;host=localhost", "root", "");
+	$db = new PDO("mysql:dbname=".$dbname.";host=".$host, $user, $pass);
 	
 }catch(PDOException $e){
 	echo 'ERROR: '.$e->getMessage();
 	exit;
 }
-
-$texto = 'Nada encontrado!';
 
 if(!empty($_POST['texto'])){
 	$texto = $_POST['texto'];
